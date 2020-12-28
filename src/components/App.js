@@ -65,13 +65,13 @@ const App = () => {
       <footer style={{ backgroundImage: `url("${images.patternHills}")` }}>
         <div className='socials'>
           <a href='./' className='socials__button'>
-            <img src={images.facebook} alt='facebook icon' />
+            <img src={images.facebook} alt='go to facebook' />
           </a>
           <a href='./' className='socials__button'>
-            <img src={images.pinterest} alt='pinterest icon' />
+            <img src={images.pinterest} alt='go to pinterest' />
           </a>
           <a href='./' className='socials__button'>
-            <img src={images.instagram} alt='instagram icon' />
+            <img src={images.instagram} alt='go to instagram' />
           </a>
         </div>
       </footer>
