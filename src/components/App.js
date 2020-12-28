@@ -6,7 +6,7 @@ import TimerCard from "./TimerCard";
 
 import images from "../images/images";
 
-const launchDate = Date.now() + 3600 * 24 * 1000 * 14 + 10000;
+const launchDate = Date.now() + 3600 * 1000 * 24 * 14 + 3000;
 
 const App = () => {
   const [time, setTime] = useState(Date.now());
@@ -39,9 +39,11 @@ const App = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      setTime(time + 1000);
-    }, 1000);
+    if (launchDate - time > 1000) {
+      setTimeout(() => {
+        setTime(time + 1000);
+      }, 1000);
+    }
   }, [time]);
 
   return (
